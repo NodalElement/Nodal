@@ -22,6 +22,9 @@
 		705B7D9D2B444D4600C0F53C /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7D9C2B444D4600C0F53C /* UINavigationController+.swift */; };
 		705B7DA02B444DD500C0F53C /* AnyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7D9F2B444DD500C0F53C /* AnyCoordinator.swift */; };
 		705B7DA22B444E1C00C0F53C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7DA12B444E1C00C0F53C /* Coordinator.swift */; };
+		705B7DA52B44527A00C0F53C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7DA42B44527A00C0F53C /* AppCoordinator.swift */; };
+		705B7DA82B446EB900C0F53C /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7DA72B446EB900C0F53C /* SplashCoordinator.swift */; };
+		705B7DAB2B44708E00C0F53C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7DAA2B44708E00C0F53C /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		705B7D9C2B444D4600C0F53C /* UINavigationController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
 		705B7D9F2B444DD500C0F53C /* AnyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCoordinator.swift; sourceTree = "<group>"; };
 		705B7DA12B444E1C00C0F53C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		705B7DA42B44527A00C0F53C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		705B7DA72B446EB900C0F53C /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		705B7DAA2B44708E00C0F53C /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +99,9 @@
 		705B7D862B419BEE00C0F53C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				705B7DA32B44524500C0F53C /* Application */,
 				705B7D962B44479500C0F53C /* Streams */,
 				705B7D872B44434800C0F53C /* Extensions */,
-				705B7D702B419B3B00C0F53C /* AppDelegate.swift */,
-				705B7D722B419B3B00C0F53C /* SceneDelegate.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -135,6 +140,8 @@
 		705B7D962B44479500C0F53C /* Streams */ = {
 			isa = PBXGroup;
 			children = (
+				705B7DA92B44708000C0F53C /* Main */,
+				705B7DA62B446EA300C0F53C /* Splash */,
 				705B7D9E2B444DB500C0F53C /* Coordinator */,
 				705B7D972B4447C800C0F53C /* Common */,
 			);
@@ -156,6 +163,32 @@
 				705B7DA12B444E1C00C0F53C /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		705B7DA32B44524500C0F53C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				705B7D702B419B3B00C0F53C /* AppDelegate.swift */,
+				705B7D722B419B3B00C0F53C /* SceneDelegate.swift */,
+				705B7DA42B44527A00C0F53C /* AppCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		705B7DA62B446EA300C0F53C /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				705B7DA72B446EB900C0F53C /* SplashCoordinator.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		705B7DA92B44708000C0F53C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				705B7DAA2B44708E00C0F53C /* MainCoordinator.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +267,11 @@
 				705B7D8D2B44439600C0F53C /* UIApplication+.swift in Sources */,
 				705B7DA02B444DD500C0F53C /* AnyCoordinator.swift in Sources */,
 				705B7D712B419B3B00C0F53C /* AppDelegate.swift in Sources */,
+				705B7DA52B44527A00C0F53C /* AppCoordinator.swift in Sources */,
 				705B7D952B4444AD00C0F53C /* AfterProtocol.swift in Sources */,
 				705B7D992B4447EC00C0F53C /* TabBarController.swift in Sources */,
+				705B7DAB2B44708E00C0F53C /* MainCoordinator.swift in Sources */,
+				705B7DA82B446EB900C0F53C /* SplashCoordinator.swift in Sources */,
 				705B7D8F2B4443DE00C0F53C /* UIScrollView+.swift in Sources */,
 				705B7D8B2B44438600C0F53C /* UIStackView+.swift in Sources */,
 				705B7D912B44444E00C0F53C /* CGFloat+.swift in Sources */,
@@ -381,7 +417,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U96PRYKKJ4;
@@ -389,7 +424,6 @@
 				INFOPLIST_FILE = Nodal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -410,7 +444,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U96PRYKKJ4;
@@ -418,7 +451,6 @@
 				INFOPLIST_FILE = Nodal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

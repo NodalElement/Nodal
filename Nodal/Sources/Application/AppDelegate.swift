@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import os
+
+let logger = Logger()
 
 @main
 class AppDelegate: UIResponder { }
