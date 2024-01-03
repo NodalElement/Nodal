@@ -330,8 +330,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		705B7D7F2B419B3C00C0F53C /* Debug */ = {
+		705B7D7F2B419B3C00C0F53C /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B9A9F12B45932D0068A3E8 /* DevelopmentConfiguration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -382,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -391,10 +392,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Development;
 		};
-		705B7D802B419B3C00C0F53C /* Release */ = {
+		705B7D802B419B3C00C0F53C /* Production */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B9A9F32B45933A0068A3E8 /* ProductionConfiguration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -439,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -447,17 +449,18 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Production;
 		};
-		705B7D822B419B3C00C0F53C /* Debug */ = {
+		705B7D822B419B3C00C0F53C /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B9A9F12B45932D0068A3E8 /* DevelopmentConfiguration.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U96PRYKKJ4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Nodal/Info.plist;
+				INFOPLIST_FILE = Nodal/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -474,17 +477,18 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Development;
 		};
-		705B7D832B419B3C00C0F53C /* Release */ = {
+		705B7D832B419B3C00C0F53C /* Production */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B9A9F32B45933A0068A3E8 /* ProductionConfiguration.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U96PRYKKJ4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Nodal/Info.plist;
+				INFOPLIST_FILE = Nodal/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -501,7 +505,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = Production;
 		};
 /* End XCBuildConfiguration section */
 
@@ -509,20 +513,20 @@
 		705B7D682B419B3B00C0F53C /* Build configuration list for PBXProject "Nodal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				705B7D7F2B419B3C00C0F53C /* Debug */,
-				705B7D802B419B3C00C0F53C /* Release */,
+				705B7D7F2B419B3C00C0F53C /* Development */,
+				705B7D802B419B3C00C0F53C /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 		705B7D812B419B3C00C0F53C /* Build configuration list for PBXNativeTarget "Nodal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				705B7D822B419B3C00C0F53C /* Debug */,
-				705B7D832B419B3C00C0F53C /* Release */,
+				705B7D822B419B3C00C0F53C /* Development */,
+				705B7D832B419B3C00C0F53C /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 /* End XCConfigurationList section */
 	};
