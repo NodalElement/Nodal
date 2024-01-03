@@ -25,6 +25,11 @@
 		705B7DA52B44527A00C0F53C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7DA42B44527A00C0F53C /* AppCoordinator.swift */; };
 		705B7DA82B446EB900C0F53C /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7DA72B446EB900C0F53C /* SplashCoordinator.swift */; };
 		705B7DAB2B44708E00C0F53C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7DAA2B44708E00C0F53C /* MainCoordinator.swift */; };
+		70B9A9F22B45932D0068A3E8 /* DevelopmentConfiguration.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 70B9A9F12B45932D0068A3E8 /* DevelopmentConfiguration.xcconfig */; };
+		70B9A9F42B45933A0068A3E8 /* ProductionConfiguration.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 70B9A9F32B45933A0068A3E8 /* ProductionConfiguration.xcconfig */; };
+		70B9A9F72B4593680068A3E8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9A9F62B4593680068A3E8 /* User.swift */; };
+		70B9A9F92B4593720068A3E8 /* AuthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9A9F82B4593720068A3E8 /* AuthType.swift */; };
+		70B9A9FB2B45938B0068A3E8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9A9FA2B45938B0068A3E8 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,11 @@
 		705B7DA42B44527A00C0F53C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		705B7DA72B446EB900C0F53C /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		705B7DAA2B44708E00C0F53C /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		70B9A9F12B45932D0068A3E8 /* DevelopmentConfiguration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DevelopmentConfiguration.xcconfig; sourceTree = "<group>"; };
+		70B9A9F32B45933A0068A3E8 /* ProductionConfiguration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ProductionConfiguration.xcconfig; sourceTree = "<group>"; };
+		70B9A9F62B4593680068A3E8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		70B9A9F82B4593720068A3E8 /* AuthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthType.swift; sourceTree = "<group>"; };
+		70B9A9FA2B45938B0068A3E8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,8 @@
 		705B7D862B419BEE00C0F53C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				70B9A9F52B4593530068A3E8 /* Models */,
+				70B9A9F02B4593170068A3E8 /* Configurations */,
 				705B7DA32B44524500C0F53C /* Application */,
 				705B7D962B44479500C0F53C /* Streams */,
 				705B7D872B44434800C0F53C /* Extensions */,
@@ -191,6 +203,25 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		70B9A9F02B4593170068A3E8 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				70B9A9F12B45932D0068A3E8 /* DevelopmentConfiguration.xcconfig */,
+				70B9A9F32B45933A0068A3E8 /* ProductionConfiguration.xcconfig */,
+				70B9A9FA2B45938B0068A3E8 /* Environment.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		70B9A9F52B4593530068A3E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70B9A9F62B4593680068A3E8 /* User.swift */,
+				70B9A9F82B4593720068A3E8 /* AuthType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,8 +280,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B9A9F42B45933A0068A3E8 /* ProductionConfiguration.xcconfig in Resources */,
 				705B7D7D2B419B3C00C0F53C /* LaunchScreen.storyboard in Resources */,
 				705B7D7A2B419B3C00C0F53C /* Assets.xcassets in Resources */,
+				70B9A9F22B45932D0068A3E8 /* DevelopmentConfiguration.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +301,7 @@
 				705B7DA02B444DD500C0F53C /* AnyCoordinator.swift in Sources */,
 				705B7D712B419B3B00C0F53C /* AppDelegate.swift in Sources */,
 				705B7DA52B44527A00C0F53C /* AppCoordinator.swift in Sources */,
+				70B9A9F72B4593680068A3E8 /* User.swift in Sources */,
 				705B7D952B4444AD00C0F53C /* AfterProtocol.swift in Sources */,
 				705B7D992B4447EC00C0F53C /* TabBarController.swift in Sources */,
 				705B7DAB2B44708E00C0F53C /* MainCoordinator.swift in Sources */,
@@ -275,6 +309,8 @@
 				705B7D8F2B4443DE00C0F53C /* UIScrollView+.swift in Sources */,
 				705B7D8B2B44438600C0F53C /* UIStackView+.swift in Sources */,
 				705B7D912B44444E00C0F53C /* CGFloat+.swift in Sources */,
+				70B9A9FB2B45938B0068A3E8 /* Environment.swift in Sources */,
+				70B9A9F92B4593720068A3E8 /* AuthType.swift in Sources */,
 				705B7D932B44445D00C0F53C /* String+.swift in Sources */,
 				705B7D732B419B3B00C0F53C /* SceneDelegate.swift in Sources */,
 			);

@@ -18,6 +18,10 @@ extension AppDelegate: UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+
+        logger.trace("❖❖ FinishLaunching AbsoluteTime: \(CFAbsoluteTimeGetCurrent())")
+        logger.trace("❖❖ ApplicationVersion: \(Environment.applicationVersion)")
+        logger.trace("❖❖ EnvironmentType: \(Environment.type)")
         return true
     }
 }
