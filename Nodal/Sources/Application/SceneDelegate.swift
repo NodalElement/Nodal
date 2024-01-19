@@ -18,7 +18,11 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         options: UIScene.ConnectionOptions
     ) {
         window = makeWindow(scene)
-        coordinator = makeCoordinator(options)
+        #if DEBUG
+            start() // For testing purposes only
+        #else
+            coordinator = makeCoordinator(options)
+        #endif
     }
 }
 
@@ -39,5 +43,21 @@ private extension SceneDelegate {
         coordinator.start(with: .init(connectionOptions: connectionOptions))
 
         return coordinator.asAny
+    }
+
+    /// Для проверки различных решений, необходимых в работе
+    @available(*, deprecated, message: "Use for testing purposes only")
+    func start() {
+        let redController = UIViewController()
+        redController.view.backgroundColor = .red
+
+        let yellowController = UIViewController()
+        yellowController.view.backgroundColor = .yellow
+
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [redController, yellowController]
+
+        window?.rootViewController = UINavigationController(rootViewController: tabBarController)
+        window?.makeKeyAndVisible()
     }
 }
