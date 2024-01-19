@@ -1,0 +1,17 @@
+# Ignore system-generated .DS_Store files
+.DS_Store
+
+# Ignore Xcode build directory
+build/
+
+# Ignore user-specific Xcode settings and data
+xcuserdata/
+
+# Ignore Xcode DerivedData directory
+DerivedData/
+
+# Ignore IntelliJ IDEA project files
+.idea/
+
+# Exclude CocoaPods directory
+/Pods
