@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		20F0C2302B2EC3296053E78E /* Pods_Nodal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0C94EBD30B53D32016A28F /* Pods_Nodal.framework */; };
+		705B34AC2B5CF41C009D4292 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705B34AB2B5CF41B009D4292 /* Colors.xcassets */; };
+		705B34AE2B5CF6C8009D4292 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 705B34AD2B5CF6C8009D4292 /* Localizable.strings */; };
+		705B34B42B5CF755009D4292 /* LeagueGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 705B34B02B5CF755009D4292 /* LeagueGothic-Regular.ttf */; };
+		705B34B52B5CF755009D4292 /* LabilGroteskTrial-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 705B34B12B5CF755009D4292 /* LabilGroteskTrial-Regular.otf */; };
+		705B34B62B5CF755009D4292 /* LabilGroteskTrial-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 705B34B22B5CF755009D4292 /* LabilGroteskTrial-Light.otf */; };
+		705B34B72B5CF755009D4292 /* LabilGroteskTrial-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 705B34B32B5CF755009D4292 /* LabilGroteskTrial-Medium.otf */; };
 		705B7D712B419B3B00C0F53C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7D702B419B3B00C0F53C /* AppDelegate.swift */; };
 		705B7D732B419B3B00C0F53C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7D722B419B3B00C0F53C /* SceneDelegate.swift */; };
-		705B7D7A2B419B3C00C0F53C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705B7D792B419B3C00C0F53C /* Assets.xcassets */; };
+		705B7D7A2B419B3C00C0F53C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705B7D792B419B3C00C0F53C /* Images.xcassets */; };
 		705B7D7D2B419B3C00C0F53C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 705B7D7B2B419B3C00C0F53C /* LaunchScreen.storyboard */; };
 		705B7D8B2B44438600C0F53C /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7D8A2B44438600C0F53C /* UIStackView+.swift */; };
 		705B7D8D2B44439600C0F53C /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7D8C2B44439600C0F53C /* UIApplication+.swift */; };
@@ -34,10 +40,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		705B34AB2B5CF41B009D4292 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		705B34AD2B5CF6C8009D4292 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		705B34B02B5CF755009D4292 /* LeagueGothic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeagueGothic-Regular.ttf"; sourceTree = "<group>"; };
+		705B34B12B5CF755009D4292 /* LabilGroteskTrial-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabilGroteskTrial-Regular.otf"; sourceTree = "<group>"; };
+		705B34B22B5CF755009D4292 /* LabilGroteskTrial-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabilGroteskTrial-Light.otf"; sourceTree = "<group>"; };
+		705B34B32B5CF755009D4292 /* LabilGroteskTrial-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabilGroteskTrial-Medium.otf"; sourceTree = "<group>"; };
+		705B34B92B5CF97F009D4292 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		705B7D6D2B419B3B00C0F53C /* Nodal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nodal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		705B7D702B419B3B00C0F53C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		705B7D722B419B3B00C0F53C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		705B7D792B419B3C00C0F53C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		705B7D792B419B3C00C0F53C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		705B7D7C2B419B3C00C0F53C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		705B7D7E2B419B3C00C0F53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		705B7D8A2B44438600C0F53C /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
@@ -76,10 +89,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		705B34A92B5CF226009D4292 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				70B9A9F02B4593170068A3E8 /* Configurations */,
+				705B7D7E2B419B3C00C0F53C /* Info.plist */,
+				705B34B92B5CF97F009D4292 /* swiftgen.yml */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		705B34AF2B5CF755009D4292 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				705B34B02B5CF755009D4292 /* LeagueGothic-Regular.ttf */,
+				705B34B12B5CF755009D4292 /* LabilGroteskTrial-Regular.otf */,
+				705B34B22B5CF755009D4292 /* LabilGroteskTrial-Light.otf */,
+				705B34B32B5CF755009D4292 /* LabilGroteskTrial-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		705B34BB2B5CF99F009D4292 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		705B7D642B419B3B00C0F53C = {
 			isa = PBXGroup;
 			children = (
-				705B7D6F2B419B3B00C0F53C /* Nodal */,
+				705B34A92B5CF226009D4292 /* Configurations */,
+				705B7D862B419BEE00C0F53C /* Sources */,
+				705B7D852B419BA200C0F53C /* Resources */,
 				705B7D6E2B419B3B00C0F53C /* Products */,
 				AB62686D87892604A4DBF036 /* Pods */,
 				A3321C6DDEA70665C0E135DE /* Frameworks */,
@@ -94,30 +137,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		705B7D6F2B419B3B00C0F53C /* Nodal */ = {
-			isa = PBXGroup;
-			children = (
-				705B7D862B419BEE00C0F53C /* Sources */,
-				705B7D852B419BA200C0F53C /* Resources */,
-			);
-			path = Nodal;
-			sourceTree = "<group>";
-		};
 		705B7D852B419BA200C0F53C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				705B7D792B419B3C00C0F53C /* Assets.xcassets */,
+				705B34BB2B5CF99F009D4292 /* Generated */,
+				705B34AF2B5CF755009D4292 /* Fonts */,
+				705B34AD2B5CF6C8009D4292 /* Localizable.strings */,
+				705B34AB2B5CF41B009D4292 /* Colors.xcassets */,
+				705B7D792B419B3C00C0F53C /* Images.xcassets */,
 				705B7D7B2B419B3C00C0F53C /* LaunchScreen.storyboard */,
-				705B7D7E2B419B3C00C0F53C /* Info.plist */,
 			);
-			path = Resources;
+			name = Resources;
+			path = Nodal/Resources;
 			sourceTree = "<group>";
 		};
 		705B7D862B419BEE00C0F53C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				70B9A9F52B4593530068A3E8 /* Models */,
-				70B9A9F02B4593170068A3E8 /* Configurations */,
 				705B7DA32B44524500C0F53C /* Application */,
 				705B7D962B44479500C0F53C /* Streams */,
 				705B7D872B44434800C0F53C /* Extensions */,
@@ -254,6 +291,7 @@
 			buildConfigurationList = 705B7D812B419B3C00C0F53C /* Build configuration list for PBXNativeTarget "Nodal" */;
 			buildPhases = (
 				B6F25DF7275A21E97446DDB4 /* [CP] Check Pods Manifest.lock */,
+				705B34B82B5CF939009D4292 /* Swiftgen */,
 				705B7D692B419B3B00C0F53C /* Sources */,
 				705B7D6A2B419B3B00C0F53C /* Frameworks */,
 				705B7D6B2B419B3B00C0F53C /* Resources */,
@@ -306,9 +344,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705B34B42B5CF755009D4292 /* LeagueGothic-Regular.ttf in Resources */,
+				705B34AC2B5CF41C009D4292 /* Colors.xcassets in Resources */,
+				705B34B52B5CF755009D4292 /* LabilGroteskTrial-Regular.otf in Resources */,
+				705B34AE2B5CF6C8009D4292 /* Localizable.strings in Resources */,
+				705B34B72B5CF755009D4292 /* LabilGroteskTrial-Medium.otf in Resources */,
 				70B9A9F42B45933A0068A3E8 /* ProductionConfiguration.xcconfig in Resources */,
 				705B7D7D2B419B3C00C0F53C /* LaunchScreen.storyboard in Resources */,
-				705B7D7A2B419B3C00C0F53C /* Assets.xcassets in Resources */,
+				705B7D7A2B419B3C00C0F53C /* Images.xcassets in Resources */,
+				705B34B62B5CF755009D4292 /* LabilGroteskTrial-Light.otf in Resources */,
 				70B9A9F22B45932D0068A3E8 /* DevelopmentConfiguration.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +360,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		705B34B82B5CF939009D4292 /* Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
 		B6F25DF7275A21E97446DDB4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,7 +590,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U96PRYKKJ4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Nodal/Resources/Info.plist;
+				INFOPLIST_FILE = Configurations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -554,7 +618,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U96PRYKKJ4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Nodal/Resources/Info.plist;
+				INFOPLIST_FILE = Configurations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

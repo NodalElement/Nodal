@@ -1,0 +1,32 @@
+output_dir: ../Resources/Generated/
+
+xcassets:
+    inputs: ../Resources/Images.xcassets
+    outputs:
+        templateName: swift5
+        output: Images.swift
+        params:
+            enumName: Image
+
+    inputs: ../Resources/Colors.xcassets
+    outputs:
+        templateName: swift5
+        output: Colors.swift
+        params:
+            enumName: Color
+
+strings:
+    inputs: ../Resources/en.lproj
+    outputs:
+        templateName: structured-swift5
+        output: Strings.swift
+        params:
+            enumName: Text
+
+fonts:
+    inputs: ../Resources/Fonts
+    outputs:
+        templateName: swift5
+        output: Fonts.swift
+        params:
+            enumName: Font

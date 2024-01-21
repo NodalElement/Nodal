@@ -1,0 +1,17 @@
+// MARK: - Common
+
+common.done = "Done";
+common.send = "Send";
+common.confirm = "Confirm";
+common.save = "Save";
+common.close = "Close";
+common.delete = "Delete";
+common.cancel = "Cancel";
+
+common.email = "Email";
+common.google = "Google";
+common.apple = "Apple";
+common.facebook = "Facebook";
+
+common.password = "Password";
+common.name = "Name";
