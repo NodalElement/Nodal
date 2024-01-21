@@ -159,8 +159,7 @@
 				705B7D792B419B3C00C0F53C /* Images.xcassets */,
 				705B7D7B2B419B3C00C0F53C /* LaunchScreen.storyboard */,
 			);
-			name = Resources;
-			path = Nodal/Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		705B7D862B419BEE00C0F53C /* Sources */ = {

@@ -1,7 +1,5 @@
-# workaround: Couldn't figure out how to erase the path
-input_dir: /Users/nodal/Desktop/Pleasure/Nodal/Nodal/Resources/
-# workaround: Couldn't figure out how to erase the path
-output_dir: /Users/nodal/Desktop/Pleasure/Nodal/Nodal/Resources/Generated/
+input_dir: ../Resources/
+output_dir: ../Resources/Generated/
 
 xcassets:
     inputs: Images.xcassets
