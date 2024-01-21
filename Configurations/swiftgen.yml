@@ -1,32 +1,35 @@
-output_dir: ../Resources/Generated/
+# workaround: Couldn't figure out how to erase the path
+input_dir: /Users/nodal/Desktop/Pleasure/Nodal/Nodal/Resources/
+# workaround: Couldn't figure out how to erase the path
+output_dir: /Users/nodal/Desktop/Pleasure/Nodal/Nodal/Resources/Generated/
 
 xcassets:
-    inputs: ../Resources/Images.xcassets
+    inputs: Images.xcassets
     outputs:
         templateName: swift5
         output: Images.swift
         params:
-            enumName: Image
+            enumName: Images
 
-    inputs: ../Resources/Colors.xcassets
+    inputs: Colors.xcassets
     outputs:
         templateName: swift5
         output: Colors.swift
         params:
-            enumName: Color
+            enumName: Colors
 
 strings:
-    inputs: ../Resources/en.lproj
+    inputs: Localizable.strings
     outputs:
         templateName: structured-swift5
         output: Strings.swift
         params:
-            enumName: Text
+            enumName: Strings
 
 fonts:
-    inputs: ../Resources/Fonts
+    inputs: Fonts
     outputs:
         templateName: swift5
         output: Fonts.swift
         params:
-            enumName: Font
+            enumName: Fonts

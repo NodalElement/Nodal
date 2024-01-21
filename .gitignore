@@ -15,3 +15,5 @@ DerivedData/
 
 # Exclude CocoaPods directory
 /Pods
+
+Nodal/Resources/Generated/

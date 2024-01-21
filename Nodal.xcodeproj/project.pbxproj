@@ -14,6 +14,10 @@
 		705B34B52B5CF755009D4292 /* LabilGroteskTrial-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 705B34B12B5CF755009D4292 /* LabilGroteskTrial-Regular.otf */; };
 		705B34B62B5CF755009D4292 /* LabilGroteskTrial-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 705B34B22B5CF755009D4292 /* LabilGroteskTrial-Light.otf */; };
 		705B34B72B5CF755009D4292 /* LabilGroteskTrial-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 705B34B32B5CF755009D4292 /* LabilGroteskTrial-Medium.otf */; };
+		705B34C32B5D0A6B009D4292 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B34C22B5D0A6B009D4292 /* Images.swift */; };
+		705B34C52B5D0A77009D4292 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B34C42B5D0A77009D4292 /* Colors.swift */; };
+		705B34C72B5D0AB2009D4292 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B34C62B5D0AB2009D4292 /* Strings.swift */; };
+		705B34C92B5D0AC4009D4292 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B34C82B5D0AC4009D4292 /* Fonts.swift */; };
 		705B7D712B419B3B00C0F53C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7D702B419B3B00C0F53C /* AppDelegate.swift */; };
 		705B7D732B419B3B00C0F53C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705B7D722B419B3B00C0F53C /* SceneDelegate.swift */; };
 		705B7D7A2B419B3C00C0F53C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705B7D792B419B3C00C0F53C /* Images.xcassets */; };
@@ -47,6 +51,10 @@
 		705B34B22B5CF755009D4292 /* LabilGroteskTrial-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabilGroteskTrial-Light.otf"; sourceTree = "<group>"; };
 		705B34B32B5CF755009D4292 /* LabilGroteskTrial-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabilGroteskTrial-Medium.otf"; sourceTree = "<group>"; };
 		705B34B92B5CF97F009D4292 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		705B34C22B5D0A6B009D4292 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		705B34C42B5D0A77009D4292 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		705B34C62B5D0AB2009D4292 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		705B34C82B5D0AC4009D4292 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		705B7D6D2B419B3B00C0F53C /* Nodal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nodal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		705B7D702B419B3B00C0F53C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		705B7D722B419B3B00C0F53C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,9 +118,13 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		705B34BB2B5CF99F009D4292 /* Generated */ = {
+		705B34C12B5D0A5E009D4292 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				705B34C22B5D0A6B009D4292 /* Images.swift */,
+				705B34C42B5D0A77009D4292 /* Colors.swift */,
+				705B34C62B5D0AB2009D4292 /* Strings.swift */,
+				705B34C82B5D0AC4009D4292 /* Fonts.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -140,7 +152,7 @@
 		705B7D852B419BA200C0F53C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				705B34BB2B5CF99F009D4292 /* Generated */,
+				705B34C12B5D0A5E009D4292 /* Generated */,
 				705B34AF2B5CF755009D4292 /* Fonts */,
 				705B34AD2B5CF6C8009D4292 /* Localizable.strings */,
 				705B34AB2B5CF41B009D4292 /* Colors.xcassets */,
@@ -377,8 +389,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n    \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" config run --config Configurations/swiftgen.yml\nelse\n    echo \"warning: SwiftGen not installed.\"\nfi \n";
 		};
 		B6F25DF7275A21E97446DDB4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -436,13 +447,17 @@
 				70B9A9F72B4593680068A3E8 /* User.swift in Sources */,
 				705B7D952B4444AD00C0F53C /* AfterProtocol.swift in Sources */,
 				705B7D992B4447EC00C0F53C /* TabBarController.swift in Sources */,
+				705B34C92B5D0AC4009D4292 /* Fonts.swift in Sources */,
+				705B34C52B5D0A77009D4292 /* Colors.swift in Sources */,
 				705B7DAB2B44708E00C0F53C /* MainCoordinator.swift in Sources */,
+				705B34C72B5D0AB2009D4292 /* Strings.swift in Sources */,
 				705B7DA82B446EB900C0F53C /* SplashCoordinator.swift in Sources */,
 				705B7D8F2B4443DE00C0F53C /* UIScrollView+.swift in Sources */,
 				705B7D8B2B44438600C0F53C /* UIStackView+.swift in Sources */,
 				705B7D912B44444E00C0F53C /* CGFloat+.swift in Sources */,
 				70B9A9FB2B45938B0068A3E8 /* Environment.swift in Sources */,
 				70B9A9F92B4593720068A3E8 /* AuthType.swift in Sources */,
+				705B34C32B5D0A6B009D4292 /* Images.swift in Sources */,
 				705B7D932B44445D00C0F53C /* String+.swift in Sources */,
 				705B7D732B419B3B00C0F53C /* SceneDelegate.swift in Sources */,
 			);
