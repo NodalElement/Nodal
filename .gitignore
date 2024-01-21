@@ -16,4 +16,8 @@ DerivedData/
 # Exclude CocoaPods directory
 /Pods
 
-Nodal/Resources/Generated/
+# Exclude Generated files
+Resources/Generated/Colors.swift
+Resources/Generated/Fonts.swift
+Resources/Generated/Images.swift
+Resources/Generated/Strings.swift
