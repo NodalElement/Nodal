@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		20F0C2302B2EC3296053E78E /* Pods_Nodal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0C94EBD30B53D32016A28F /* Pods_Nodal.framework */; };
+		702D79D22B72483B00D715FA /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702D79D12B72483B00D715FA /* Collection+.swift */; };
+		702D79D42B72497700D715FA /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702D79D32B72497700D715FA /* Date+.swift */; };
+		702D79D62B724CEF00D715FA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702D79D52B724CEF00D715FA /* UIView+.swift */; };
+		702D79D82B724DC600D715FA /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702D79D72B724DC600D715FA /* UIDevice+.swift */; };
 		702DD2282B62E2BA00F58C85 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702DD2272B62E2BA00F58C85 /* NavigationCoordinator.swift */; };
 		705B34AC2B5CF41C009D4292 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 705B34AB2B5CF41B009D4292 /* Colors.xcassets */; };
 		705B34AE2B5CF6C8009D4292 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 705B34AD2B5CF6C8009D4292 /* Localizable.strings */; };
@@ -45,6 +49,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		702D79D12B72483B00D715FA /* Collection+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
+		702D79D32B72497700D715FA /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		702D79D52B724CEF00D715FA /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		702D79D72B724DC600D715FA /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
 		702DD2272B62E2BA00F58C85 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		705B34AB2B5CF41B009D4292 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		705B34AD2B5CF6C8009D4292 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -190,6 +198,8 @@
 			children = (
 				705B7D902B44444E00C0F53C /* CGFloat+.swift */,
 				705B7D922B44445D00C0F53C /* String+.swift */,
+				702D79D12B72483B00D715FA /* Collection+.swift */,
+				702D79D32B72497700D715FA /* Date+.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -202,6 +212,8 @@
 				705B7D8E2B4443DE00C0F53C /* UIScrollView+.swift */,
 				705B7D9A2B4449D500C0F53C /* UIEdgeInsets+.swift */,
 				705B7D9C2B444D4600C0F53C /* UINavigationController+.swift */,
+				702D79D52B724CEF00D715FA /* UIView+.swift */,
+				702D79D72B724DC600D715FA /* UIDevice+.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -450,11 +462,15 @@
 				705B7D952B4444AD00C0F53C /* AfterProtocol.swift in Sources */,
 				705B7D992B4447EC00C0F53C /* TabBarController.swift in Sources */,
 				702DD2282B62E2BA00F58C85 /* NavigationCoordinator.swift in Sources */,
+				702D79D22B72483B00D715FA /* Collection+.swift in Sources */,
 				705B34C92B5D0AC4009D4292 /* Fonts.swift in Sources */,
+				702D79D42B72497700D715FA /* Date+.swift in Sources */,
 				705B34C52B5D0A77009D4292 /* Colors.swift in Sources */,
+				702D79D62B724CEF00D715FA /* UIView+.swift in Sources */,
 				705B7DAB2B44708E00C0F53C /* MainCoordinator.swift in Sources */,
 				705B34C72B5D0AB2009D4292 /* Strings.swift in Sources */,
 				705B7DA82B446EB900C0F53C /* SplashCoordinator.swift in Sources */,
+				702D79D82B724DC600D715FA /* UIDevice+.swift in Sources */,
 				705B7D8F2B4443DE00C0F53C /* UIScrollView+.swift in Sources */,
 				705B7D8B2B44438600C0F53C /* UIStackView+.swift in Sources */,
 				705B7D912B44444E00C0F53C /* CGFloat+.swift in Sources */,
