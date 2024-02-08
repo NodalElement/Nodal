@@ -46,6 +46,8 @@
 		70B9A9F72B4593680068A3E8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9A9F62B4593680068A3E8 /* User.swift */; };
 		70B9A9F92B4593720068A3E8 /* AuthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9A9F82B4593720068A3E8 /* AuthType.swift */; };
 		70B9A9FB2B45938B0068A3E8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9A9FA2B45938B0068A3E8 /* Environment.swift */; };
+		70C6D0E72B749EBA0026C443 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C6D0E62B749EBA0026C443 /* UIViewController+.swift */; };
+		70C6D0E92B749F070026C443 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C6D0E82B749F070026C443 /* Double+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,8 @@
 		70B9A9F62B4593680068A3E8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		70B9A9F82B4593720068A3E8 /* AuthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthType.swift; sourceTree = "<group>"; };
 		70B9A9FA2B45938B0068A3E8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		70C6D0E62B749EBA0026C443 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		70C6D0E82B749F070026C443 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		79AD7925D97E45042DFA4BF2 /* Pods-Nodal.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nodal.production.xcconfig"; path = "Target Support Files/Pods-Nodal/Pods-Nodal.production.xcconfig"; sourceTree = "<group>"; };
 		D2618AF7423C221A8D182525 /* Pods-Nodal.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nodal.development.xcconfig"; path = "Target Support Files/Pods-Nodal/Pods-Nodal.development.xcconfig"; sourceTree = "<group>"; };
 		EC0C94EBD30B53D32016A28F /* Pods_Nodal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nodal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +204,7 @@
 				705B7D922B44445D00C0F53C /* String+.swift */,
 				702D79D12B72483B00D715FA /* Collection+.swift */,
 				702D79D32B72497700D715FA /* Date+.swift */,
+				70C6D0E82B749F070026C443 /* Double+.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 				705B7D9C2B444D4600C0F53C /* UINavigationController+.swift */,
 				702D79D52B724CEF00D715FA /* UIView+.swift */,
 				702D79D72B724DC600D715FA /* UIDevice+.swift */,
+				70C6D0E62B749EBA0026C443 /* UIViewController+.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -455,6 +461,7 @@
 				705B7D9B2B4449D500C0F53C /* UIEdgeInsets+.swift in Sources */,
 				705B7DA22B444E1C00C0F53C /* Coordinator.swift in Sources */,
 				705B7D8D2B44439600C0F53C /* UIApplication+.swift in Sources */,
+				70C6D0E92B749F070026C443 /* Double+.swift in Sources */,
 				705B7DA02B444DD500C0F53C /* AnyCoordinator.swift in Sources */,
 				705B7D712B419B3B00C0F53C /* AppDelegate.swift in Sources */,
 				705B7DA52B44527A00C0F53C /* AppCoordinator.swift in Sources */,
@@ -475,6 +482,7 @@
 				705B7D8B2B44438600C0F53C /* UIStackView+.swift in Sources */,
 				705B7D912B44444E00C0F53C /* CGFloat+.swift in Sources */,
 				70B9A9FB2B45938B0068A3E8 /* Environment.swift in Sources */,
+				70C6D0E72B749EBA0026C443 /* UIViewController+.swift in Sources */,
 				70B9A9F92B4593720068A3E8 /* AuthType.swift in Sources */,
 				705B34C32B5D0A6B009D4292 /* Images.swift in Sources */,
 				705B7D932B44445D00C0F53C /* String+.swift in Sources */,
